@@ -2,6 +2,7 @@ import express, { Express } from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
 import dotenv from "dotenv";
+// import { Contact } from "./Entities/Contact.entity";
 import connection from "../config/ormconfig";
 dotenv.config();
 

@@ -1,6 +1,7 @@
 import { DataSource } from "typeorm";
 
 import dotenv from "dotenv";
+import { Contact } from "../src/Entities/Contact.entity";
 dotenv.config();
 
 const connectDB = new DataSource({
@@ -11,6 +12,7 @@ const connectDB = new DataSource({
   username: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
+  entities: [Contact],
   synchronize: true,
 });
 
