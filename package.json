@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --exec ts-node src/index.ts",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -12,7 +13,7 @@
   },
   "keywords": [],
   "author": "Rohit",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Rohit-kumar12/Bitespeed_Backend_Assignment/issues"
   },
