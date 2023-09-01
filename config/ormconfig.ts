@@ -9,6 +9,7 @@ const connectDB = new DataSource({
   url: process.env.DB_EXTERNAL_URL,
   entities: [Contact],
   synchronize: true,
+  ssl: false,
 });
 
 const connection = async () => {
