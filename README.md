@@ -17,6 +17,8 @@
 ```
 ### Response Body
 
+```json
+
 {
     "contact": {
         "primaryContactId": 1,
