@@ -4,7 +4,7 @@ import { Contact } from "../Entities/Contact.entity";
 
 export const identifyController = async (req: Request, res: Response) => {
   const { email, phoneNumber } = req.body;
-    // let _id;
+  // let _id;
   try {
     // const contactRepository = connectDB.getRepository(Contact);
     let primaryContact: Contact | null = await Contact.findOne({
@@ -77,8 +77,6 @@ export const identifyController = async (req: Request, res: Response) => {
     };
 
     res.status(200).json({
-      success: true,
-      msg: "contact saved successfully",
       response,
     });
   } catch (error) {
