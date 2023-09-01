@@ -6,7 +6,7 @@ dotenv.config();
 
 const connectDB = new DataSource({
   type: "postgres",
-  url: "postgres://rohit:FQoH7JNkMf7j6G9Qy2kusHeRTOkTwxSO@dpg-cjoaodj58phs73bm0p10-a.singapore-postgres.render.com/bitespeed_backend",
+  url: process.env.DB_EXTERNAL_URL,
   entities: [Contact],
   synchronize: true,
 });
