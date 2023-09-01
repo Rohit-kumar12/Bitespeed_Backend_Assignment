@@ -14,3 +14,14 @@
 }
 
 
+```
+### Response Body
+
+{
+    "contact": {
+        "primaryContactId": 1,
+        "emails": ["example@gmail.com"],
+        "phoneNumbers": ["123456789"],
+        "secondaryContactIds": []
+    }
+}
