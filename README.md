@@ -1,16 +1,14 @@
-# Bitespeed_Backend_Assignment
-Endoint : 'https://bitspeed-backend-xvyu.onrender.com/identify'
-Method: POST
-RequestBody : {
-                  "email": "example@email.com",
-                  "phoneNumber": "1234567890"
-              }
+# Bitespeed Backend Assignment
 
-Response : 	{
-            		"contact":{
-            			"primaryContatctId": 1,
-            			"emails": ["example@gmail.com"]
-            			"phoneNumbers": ["123456789"]
-            			"secondaryContactIds": []
-            		}
-            }
+## Identify Endpoint
+
+**Endpoint**: `https://bitspeed-backend-xvyu.onrender.com/identify`
+**Method**: POST
+
+### Request Body
+
+```json
+{
+    "email": "example@email.com",
+    "phoneNumber": "1234567890"
+}
